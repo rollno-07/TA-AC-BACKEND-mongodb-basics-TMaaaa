@@ -111,19 +111,28 @@ db.TT.insertMany([{
 show collections
 
 - rename `TT` collection to `tennis`.
+db.TT.renameCollection(`tennis`)
 
 - create a capped collection called `khokho` which should have max 3 documents.
+
+db.createCollection('khokho',{capped:true, size:1024,max:3})
 
   Try inserting more than 3 and see what happens?
 
 - check whether a collection is capped or not?
+db.khokho.isCapped()
 
 - drop all documents from `football` collection.
+db.football.drop()
 
 - delete cricket collection completely.
+db.cricket.remove({})
 
 - delete sports database.
+db.dropDatabse()
 
 - check which database you are connected to ?
+db
 
 - connect to test database
+use test
