@@ -36,6 +36,10 @@ Go to `https://www.json-generator.com/`
     email: "{{email()}}",
     phone: "+1 {{phone()}}",
     tags: ["{{repeat(2)}}", '{{lorem(1, "words")}}'],
+  
+  
+  
+  
   },
 ];
 ```
